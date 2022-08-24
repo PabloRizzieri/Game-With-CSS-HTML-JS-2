@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Press+Start+2P&display=swap');
+
+body{
+    background: url(./img/fondo2.png) no-repeat center center/cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#select-mascota {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulito {
+    color: black;
+    opacity: 0.8;
+    font-size: 120px;
+    width: 800px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    margin-bottom: 250px;
+}
+
+.titulito-2 {
+    color: black;
+    padding: 20px;
+    font-size: 28px;
+    height: 40px;
+    width: 755px;
+    background-color: #EAE509;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.tarjetas {
+    display: flex;
+}
+
+.tarjeta-de-mokepon {
+    width: 230px;
+    height: 69px;
+    background-color: #7dce13a6;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    font-weight: 800;
+}
+
+.tarjeta-de-mokepon img{
+    width: 65px;
+}
+
+#btn-mascotas {
+    width: 800px;
+    background-color: #2B7A0B;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #EAE509;
+}
+
+
+#select-ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eleccion-ataque{
+    width: 400px;
+    height: 69px;
+    background-color: #EAE509;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.botones{
+    display: flex;
+}
+
+.boton-de-ataque{
+    width: 100px;
+    height: 69px;
+    background-color: #5BB318;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    font-size: 20px;
+}
+
+#texto-jugador{
+    width: 330px;
+    height: 100px;
+    font-size: 12px;
+    background-color: #2B7A0B;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    font-weight: 800;
+}
+
+#texto-enemigo{
+    width: 330px;
+    height: 100px;
+    font-size: 12px;
+    background-color: #2B7A0B;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    font-weight: 800;
+}
+
+#mensajes {
+    width: 300px;
+    height: 120px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: rgba(218, 165, 32, 0.664);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn-reiniciar{
+    border: transparent;
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#resultado{
+    color: black;
+    font-weight: 800;
+    
+}
+
+.vidas-jugadores{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-items: center;
+    padding: 15px;
+    margin: 15px;
+    font-weight: 1000;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    background-color: #2a7a0bad;
+    color: rgb(194, 144, 19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #eae609b4;
+    font-family: 'Press Start 2P', cursive;
+    margin: 10px;
+}
+
+.titulito-mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    height: 100px;
+    border: 8px solid #eae609c7;
+    background-color: #2a7a0b9f;
+    padding: 10px;
+    border-radius: 15px;
+    color: #EAE509;
+}
+
+#mapa{
+    border: 2px solid #5BB318;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 880px){
+    .tarjetas, .botones{
+        flex-direction: column;
+    }
+}    
+
+
+@media (max-width: 880px){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}    

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON</title>
+    <link rel="stylesheet" href="mokepon.css">
+</head>
+<body>
+    <section id="select-mascota">
+        <h1 class="titulito">MOKEPON</h1>
+        <h2 class="titulito-2">  SELECCIONA TU MASCOTA</h2>
+        <div id='contenedorTarjetas' class="tarjetas">
+        </div>
+        
+        <button id="btn-mascotas">SELECCIONAR</button>
+    </section>
+
+    <section id="ver-mapa">
+        <h1 class="titulito-mapa">Recorre el mapa con tu Mokepon</h1>
+        <canvas id="mapa"></canvas>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">MOVER ARRIBA</button>
+        <div>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">MOVER IZQUIERDA</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">MOVER ABAJO</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">MOVER DERECHA</button>
+        </div>
+    </section>
+
+    <section id="select-ataque">
+        <h1 class="titulito">MOKEPON</h1>
+        <h2 class="eleccion-ataque">ELIGE TU ATAQUE</h2>
+        <div id="contenedorAtaques" class="botones">
+        </div>
+        <div>
+            <div id="mensajes">
+                <p id="resultado">Mucha suerte</p>
+                <section id="reiniciar">
+                    <button id="btn-reiniciar">REINICIAR</button>
+                </section>
+            </div>
+
+        </div>
+        <div class="vidas-jugadores">
+            <div class="ataques-jugador">
+                <p id="vidas-jugador">0</p>
+                <p id="mascota-jugador"></p>
+                <div id="ataques-del-jugador"></div>
+            </div>
+            <div class="ataques-enemigo">
+                <p id="vidas-enemigo">0</p>
+                <p id="mascota-enemigo"></p>
+                <div id="ataques-del-enemigo"></div>
+            </div>
+        </div>
+        <div id="sonidos">
+            <audio src="./music/musiquita.mp3" autoplay loop id="musica"></audio>
+        </div>
+    </section>
+    <script src="./mokepon.js"></script>
+</body>
+</html>
